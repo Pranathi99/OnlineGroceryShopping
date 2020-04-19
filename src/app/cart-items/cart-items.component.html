@@ -1,0 +1,21 @@
+<div class="row top-buffer">
+    <div class="col-xs-2"><img class="img-responsive cart-image" src="{{product.img}}">
+    </div>
+    <div class="col-xs-4">
+        <h4 class="product-name"><strong>{{product.description}}</strong></h4>
+        <h5><small>Rs.{{product.price}}</small></h5>
+        <h5><small>Quantity {{product.quantity}}-{{product.typeOfQuantity}}</small></h5>
+    </div>
+    <div class="col-xs-6">
+        <div class="col-xs-6 text-right">
+            <h6><span class="text-muted">{{product.price*product.quantity}}</span></h6>
+        </div>
+        <div class="col-xs-6">
+            <div class="cartButtonsStyle">
+                <span class="glyphicon glyphicon-plus cartButton" (click)="onPlusClick()"></span>
+                <label class="noOfItems">{{product.quantity}}</label>
+                <span class="glyphicon glyphicon-minus cartButton" (click)="onMinusClick()"></span>
+            </div>
+        </div>
+    </div>
+</div>

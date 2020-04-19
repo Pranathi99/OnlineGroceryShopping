@@ -1,0 +1,27 @@
+.top-buffer { 
+    margin-top:20px; 
+}
+
+.cartButton {
+    background-color: #80aaff;
+    color:white;
+    font-size: 12px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding:8px;
+    border-radius: 50%;
+}
+
+.noOfItems {
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+h5 {
+    margin: 0px;
+}
+
+.cart-image {
+    height: 80px;
+}

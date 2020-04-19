@@ -1,0 +1,14 @@
+<div class="card shadow-sm p-3 mb-5 bg-white rounded" style="width: 30rem;">
+    <img class="card-img-top" height="200px" width="200px" src="{{product.img}}" alt="{{product.description}}">
+    <div class="card-body">
+        <div class="productDescription">
+        <h4 class="card-text">{{product.description}}</h4>
+        <h5>Rs.{{product.price}}/{{product.typeOfQuantity}}</h5>
+        </div>
+        <div class="cartButtonsStyle">
+            <span class="glyphicon glyphicon-plus cartButton" (click)="onPlusClick()"></span>
+            <label class="noOfItems">{{product.quantity}}</label>
+            <span class="glyphicon glyphicon-minus cartButton" (click)="onMinusClick()"></span>
+        </div>
+    </div>
+</div>

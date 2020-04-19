@@ -1,0 +1,58 @@
+<nav class="navbar navbar-expand-sm bg-light">
+
+    <!-- Links -->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link 1</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link 2</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link 3</a>
+        </li>
+    </ul>
+
+</nav>
+<div class="container shadow p-3 mb-5 bg-white rounded">
+    <div class="row">
+        <div class="col-md-7" style="padding-right:20px; border-right: 1px solid #ccc;">
+            <h2>Your Cart</h2>
+            <div *ngFor="let item of getValues(availableItems)">
+                <app-cart-items [product]="item"></app-cart-items>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <h3 class="headingStyle">Order Summary</h3>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="phno">Phone Number:</label>
+                    <input type="text" class="form-control" id="phno">
+                </div>
+                <div class="row" *ngFor="let i of getValues(availableItems)">
+                    <div class="col-lg-6 col-xs-6 itemDetails">
+                        <h5>{{i.description}}</h5>
+                    </div>
+                    <div class="col-lg-6 col-xs-6 itemPrice">
+                        <h5>{{i.price*i.quantity}}</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-xs-6">
+                        <h3>TOTAL</h3>
+                    </div>
+                    <div class="col-lg-6 col-xs-6 totalPrice">
+                        <h3>{{totalPrice()}}</h3>
+                    </div>
+                </div>
+                <a>
+                <button type="button" class="btn btn-primary checkoutButton">Proceed to checkout</button>
+                </a>  
+            </form>
+        </div>
+    </div>
+</div>
