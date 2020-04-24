@@ -7,7 +7,11 @@ import {DalsComponent} from '../app/dals/dals.component';
 import {FloursComponent} from '../app/flours/flours.component';
 import {SpicesComponent} from '../app/spices/spices.component';
 import {CartComponent} from '../app/cart/cart.component';
-import {CardsComponent} from './cards/cards.component';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { ProfileComponent } from './profile/profile.component';
+import { EditprofileComponent } from './editprofile/editprofile.component';
 
 const routes: Routes = [
     {path:'vegetables',component:VegetablesComponent},
@@ -16,7 +20,12 @@ const routes: Routes = [
     {path:'dals',component:DalsComponent},
     {path:'flours',component:FloursComponent},
     {path:'spices',component:SpicesComponent},
-    {path:'cart',component:CartComponent}
+    {path:'cart',component:CartComponent},
+    {path: '', component: HomeComponent},
+    {path: 'login', component: LoginComponent},
+    {path: 'signup', component: SignupComponent},
+    {path: 'profile', component: ProfileComponent},
+    {path: 'editprofile', component:EditprofileComponent}
 ];
 
 @NgModule({
