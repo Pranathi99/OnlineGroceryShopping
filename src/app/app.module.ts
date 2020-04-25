@@ -22,6 +22,8 @@ import { NavComponent } from './nav/nav.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SignupComponent } from './signup/signup.component';
 import { EditaddressComponent } from './editaddress/editaddress.component';
+import { PaymentComponent } from './payment/payment.component';
+import { BreadsComponent } from './breads/breads.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { EditaddressComponent } from './editaddress/editaddress.component';
     NavComponent,
     ProfileComponent,
     SignupComponent,
-    EditaddressComponent
+    EditaddressComponent,
+    PaymentComponent,
+    BreadsComponent
   ],
   imports: [
     BrowserModule,
