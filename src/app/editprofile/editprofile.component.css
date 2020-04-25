@@ -1,3 +1,9 @@
 #start{
-    margin-top: 5em;
+    margin-top: 10em;
+}
+.textSize{
+    font-size: 12px;
+}
+label{
+    font-size: 14px;
 }

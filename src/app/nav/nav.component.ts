@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CartComponent } from '../cart/cart.component';
 
 @Component({
   selector: 'app-nav',
@@ -7,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
+  cartComponent = new CartComponent();
+  cartCount=this.cartComponent.totalNoOfItems();
+  
   constructor() { }
 
   ngOnInit(): void {

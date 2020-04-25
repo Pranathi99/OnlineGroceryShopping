@@ -12,6 +12,7 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { ProfileComponent } from './profile/profile.component';
 import { EditprofileComponent } from './editprofile/editprofile.component';
+import { EditaddressComponent } from './editaddress/editaddress.component';
 
 const routes: Routes = [
     {path:'vegetables',component:VegetablesComponent},
@@ -25,7 +26,8 @@ const routes: Routes = [
     {path: 'login', component: LoginComponent},
     {path: 'signup', component: SignupComponent},
     {path: 'profile', component: ProfileComponent},
-    {path: 'editprofile', component:EditprofileComponent}
+    {path: 'editprofile', component:EditprofileComponent},
+    {path: 'editaddress', component: EditaddressComponent}
 ];
 
 @NgModule({
