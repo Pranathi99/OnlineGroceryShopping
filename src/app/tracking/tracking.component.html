@@ -1,0 +1,24 @@
+
+<div class="header">
+    <h1>SHIPMENT TRACK</h1>
+</div>
+
+<div class="container">
+    <div class="content2">
+        <h1>Order No:<span>{{orderno}}</span></h1>
+    </div>
+    <div class="content3">
+        <h1>Expected Delivery:<span>{{date}}</span></h1>
+        </div>
+            <div class="row">
+           <div class="col-md-12">
+          
+           <span *ngFor="let item of counts;let i = index">
+       <span class="circle-desc" [class.circle-desc-active]="orderStatus == item">{{ item }}</span>
+            <span class="circles" [class.active]="orderStatus == item" [class.c-active]="orderStatus!= item"></span>
+            <span class="bar" *ngIf="(i != counts.length-1)"></span>
+             
+          </span>
+            </div>
+          </div>     
+    </div>

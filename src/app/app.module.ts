@@ -25,6 +25,7 @@ import { EditaddressComponent } from './editaddress/editaddress.component';
 import { PaymentComponent } from './payment/payment.component';
 import { BreadsComponent } from './breads/breads.component';
 import { FeedbackComponent } from './feedback/feedback.component';
+import { TrackingComponent } from './tracking/tracking.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { FeedbackComponent } from './feedback/feedback.component';
     EditaddressComponent,
     PaymentComponent,
     BreadsComponent,
-    FeedbackComponent
+    FeedbackComponent,
+    TrackingComponent
   ],
   imports: [
     BrowserModule,
