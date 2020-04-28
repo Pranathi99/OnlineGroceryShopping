@@ -1,0 +1,43 @@
+.container{
+    box-shadow: 0 4px 8px 0 rgb(73, 72, 72); 
+         transition: 0.3s;
+      text-align: center;
+      width:35%;
+      height: 400px;
+      margin:8% auto 0 auto;
+      border-style: groove;
+    
+    }
+    textarea {
+        width: 80%;
+        height: 200px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        resize: none;
+      }
+      .fa{
+          font-size: 50px;
+      }
+      .stars{
+          display:flex;
+          justify-content: center;
+          color: rgb(236, 218, 54);
+      }
+      .button {
+        padding: 25px 35px;
+        font-size: 12px;
+        cursor: pointer;
+        text-decoration: none;
+        color: #fff;
+        background-color: rgb(8, 76, 133);
+        border: none;
+        border-radius: 4px;
+      }
+      
+      

@@ -24,6 +24,7 @@ import { SignupComponent } from './signup/signup.component';
 import { EditaddressComponent } from './editaddress/editaddress.component';
 import { PaymentComponent } from './payment/payment.component';
 import { BreadsComponent } from './breads/breads.component';
+import { FeedbackComponent } from './feedback/feedback.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { BreadsComponent } from './breads/breads.component';
     SignupComponent,
     EditaddressComponent,
     PaymentComponent,
-    BreadsComponent
+    BreadsComponent,
+    FeedbackComponent
   ],
   imports: [
     BrowserModule,

@@ -15,6 +15,7 @@ import { EditprofileComponent } from './editprofile/editprofile.component';
 import { EditaddressComponent } from './editaddress/editaddress.component';
 import {PaymentComponent} from './payment/payment.component'
 import { BreadsComponent } from './breads/breads.component';
+import {FeedbackComponent} from './feedback/feedback.component';
 
 const routes: Routes = [
     {path:'vegetables',component:VegetablesComponent},
@@ -31,7 +32,8 @@ const routes: Routes = [
     {path: 'editprofile', component:EditprofileComponent},
     {path: 'editaddress', component: EditaddressComponent},
     {path:'payment',component:PaymentComponent},
-    {path:'breads',component:BreadsComponent}
+    {path:'breads',component:BreadsComponent},
+    {path:'feedback',component:FeedbackComponent}
 ];
 
 @NgModule({
