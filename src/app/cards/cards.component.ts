@@ -22,7 +22,7 @@ export class CardsComponent implements OnInit {
     cartComponent.addToCart(this.product);
   }
 
-  onPlusClick(): void {
+  onPlusClick(): void { 
     var value = this.product.quantity + 1;
     var available = this.product.availableQuantity;
     if (value <= available) {

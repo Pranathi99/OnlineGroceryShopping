@@ -2,7 +2,7 @@
 <div class="container shadow p-3 mb-5 bg-white rounded">
     <div class="row">
         <div class="col-md-7" style="padding-right:20px; border-right: 1px solid #ccc;">
-            <h2>Your Cart</h2>
+            <h2>Your Cart</h2>  
             <div *ngFor="let item of getValues(availableItems)">
                 <app-cart-items [product]="item"></app-cart-items>
             </div>
@@ -21,7 +21,7 @@
                 <div class="row" *ngFor="let i of getValues(availableItems)">
                     <div class="col-lg-6 col-xs-6 itemDetails">
                         <h5>{{i.description}}</h5>
-                    </div>
+                  </div>
                     <div class="col-lg-6 col-xs-6 itemPrice">
                         <h5>{{i.price*i.quantity}}</h5>
                     </div>
